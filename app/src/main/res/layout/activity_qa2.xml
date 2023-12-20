@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Q_A2Activity">
+
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="405dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="4dp"
+        android:hint="Enter Age"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextSleep"
+        android:layout_width="412dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="4dp"
+        android:hint="Enter average sleep at night: "
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextAge" />
+
+    <EditText
+        android:id="@+id/editTextPhysicalActivity"
+        android:layout_width="412dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="4dp"
+        android:hint="Time spent exercising daily: "
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextSleep" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupWalk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextPhysicalActivity">
+
+        <TextView
+            android:id="@+id/textViewWalk"
+            android:layout_width="184dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="Walking Difficulty?" />
+
+        <RadioButton
+            android:id="@+id/radioButtonWalkYes"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/radioButtonWalkNo"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:text="No" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroupRace"
+        android:layout_width="455dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="76dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.346"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupWalk">
+
+        <RadioButton
+            android:id="@+id/RadioButtonHispanic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hispanic" />
+
+        <RadioButton
+            android:id="@+id/RadioButtonWhite"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:text="White" />
+
+        <RadioButton
+            android:id="@+id/RadioButtonAsian"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:text="Asian" />
+
+        <RadioButton
+            android:id="@+id/RadioButtonBlack"
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:text="Black" />
+
+        <RadioButton
+            android:id="@+id/RadioButtonOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other" />
+
+        <TextView
+            android:id="@+id/textViewRace"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroupHealth"
+        android:layout_width="388dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="112dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupRace">
+
+        <TextView
+            android:id="@+id/textViewHealth"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="How often in the past 30 dayshave you had bad general health feeling?" />
+
+
+        <RadioButton
+            android:id="@+id/RadioButtonPoor"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:text="Poor" />
+
+        <RadioButton
+            android:id="@+id/RadioButtonFair"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="Fair" />
+
+        <RadioButton
+            android:id="@+id/RadioButtonGood"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="Good" />
+
+        <RadioButton
+            android:id="@+id/RadioButtonVery"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:text="Very" />
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="79dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="20dp"
+        android:text="Race:"
+        app:layout_constraintBottom_toTopOf="@id/radioGroupRace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="How often in the past 30 days have you had bad general health feeling?"
+        app:layout_constraintBottom_toTopOf="@id/radioGroupHealth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

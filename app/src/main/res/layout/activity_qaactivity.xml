@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Q_Aactivity">
+
+
+    <EditText
+        android:id="@+id/editTextHeight"
+        android:layout_width="405dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="4dp"
+        android:hint="Enter height (cm)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="412dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="4dp"
+        android:hint="Enter weight (kg)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextHeight" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupGender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextWeight">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="184dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="Gender" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMale"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFemale"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroupDrinking"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupGender">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="Do you Drink?" />
+
+        <RadioButton
+            android:id="@+id/RadioButtonYesDrinking"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/RadioButtonNoDrinking"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:text="No" />
+
+    </RadioGroup>
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupSmoking"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupDrinking">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="Do you Smoke?" />
+
+        <RadioButton
+            android:id="@+id/RadioButtonYesSmoking"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/RadioButtonNoSmoking"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:text="No" />
+
+
+    </RadioGroup>
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupStroke"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupSmoking">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="Did you have a stroke?" />
+
+        <RadioButton
+            android:id="@+id/RadioButtonYesStroke"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/RadioButtonNoStroke"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:text="No" />
+
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroupDiabetes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupStroke">
+
+        <TextView
+            android:id="@+id/textViewDiabetes"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="Do you have diabetes?" />
+
+        <RadioButton
+            android:id="@+id/RadioButtonYesDiabetes"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/RadioButtonNoDiabetes"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:text="No" />
+
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroupAsthma"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupDiabetes">
+
+        <TextView
+            android:id="@+id/textViewAsthma"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="Do you have Asthma?" />
+
+        <RadioButton
+            android:id="@+id/RadioButtonYesAsthma"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/RadioButtonNoAsthma"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:text="No" />
+
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroupConditionOne"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupAsthma">
+
+        <TextView
+            android:id="@+id/textViewConditionOne"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="Have/ had a kidney disease?" />
+
+        <RadioButton
+            android:id="@+id/RadioButtonYesConditionOne"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/RadioButtonNoConditionOne"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:text="No" />
+
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroupConditionTwo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupConditionOne">
+
+        <TextView
+            android:id="@+id/textViewConditionTwo"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="Have/ had skin cancer?" />
+
+        <RadioButton
+            android:id="@+id/RadioButtonYesConditionTwo"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/RadioButtonNoConditionTwo"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:text="No" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/proceed"
+        android:layout_width="317dp"
+        android:layout_height="40dp"
+        android:text="Proceed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/radioGroupConditionTwo"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
